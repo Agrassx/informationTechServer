@@ -3,7 +3,7 @@
 
 ## Requirements
 
-* play framework 2.5.x
+* Play Framework 2.5.x
 * MySQL Server or another DataBase
 
 
@@ -18,8 +18,9 @@
 
 ## DataBase
 
-    To work needed MySQL DataBase (or another) with table:
-    ```
+To work needed MySQL DataBase (or another) with table:
+
+```
     +---------------------------+
     |         Articles          |
     +---------------------------+
@@ -27,12 +28,14 @@
     | name                      |
     | url                       |
     +---------------------------+
-    ```
 
-    And DataBase handler with the following methods:
-    * putArticle(Article article) - insert new article
-    * getUpdates() - get JsonArray of article list
-    * getLastOffset() - get last offset version from DataBase
+```
+
+And DataBase handler with the following methods:
+
+   * putArticle(Article article) - insert new article
+   * getUpdates() - get JsonArray of article list
+   * getLastOffset() - get last offset version from DataBase
 
 ## What does server do?
 
@@ -84,7 +87,6 @@ GET                                        |        |
 # Default Play Framework's Documentation
 
 ## Controllers
-===========
 
 * HomeController.java:
 
@@ -100,7 +102,6 @@ GET                                        |        |
   handling requests.
 
 ## Components
-==========
 
 * Module.java:
 
@@ -116,7 +117,6 @@ GET                                        |        |
   when the application stops.
 
 ## Filters
-=======
 
 * Filters.java:
 
